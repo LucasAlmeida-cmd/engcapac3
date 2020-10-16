@@ -6,10 +6,23 @@ app = Flask(__name__)
 
 @app.route('/')
 def nao_entre_em_panico():
+    limite = 100
+    c = 1
+    p = 1 
+    numero  = 3 
 
-
-    primos = "Tudo vai dar certo caros alunos!"
-
+    primos = '2,'
+    
+    while p < limite:
+        eprimo = 1
+        for i in range(2, numero):
+            if numero % i == 0:
+                eprimo + 0
+                break
+        if (eprimo):
+            primos = primos + str(numero) + ','
+            p += 1 
+        numero += 1 
 
     return primos
 
